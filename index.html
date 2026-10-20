@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Favourite Music</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101010;
+    color: white;
+}
+
+header {
+    background: #181818;
+    padding: 25px 12px;
+    text-align: center;
+    border-bottom: 2px solid #ff3155;
+}
+
+header h1 {
+    color: #ff3155;
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    padding: 20px 14px;
+}
+
+.banner {
+    background: linear-gradient(135deg, #30202a, #191919);
+    padding: 25px 15px;
+    border-radius: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 1px solid #383838;
+}
+
+.banner .music-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+}
+
+.banner p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+h2.title {
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #1c1c1c;
+    border: 1px solid #333333;
+    border-radius: 15px;
+    padding: 14px;
+    margin-bottom: 15px;
+    transition: 0.25s;
+}
+
+.song:hover {
+    background: #282828;
+    transform: translateY(-2px);
+}
+
+.cover {
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+    background: #35212a;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+}
+
+.details {
+    flex: 1;
+    min-width: 0;
+}
+
+.details h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.details p {
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.play {
+    text-decoration: none;
+    background: #ff3155;
+    color: white;
+    padding: 11px 13px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.play:active {
+    transform: scale(0.95);
+    background: #d91f42;
+}
+
+.link-box {
+    background: #1c1c1c;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 12px;
+    margin-top: 22px;
+}
+
+.link-box h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.full-link {
+    display: block;
+    color: #8fcaff;
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    text-decoration: underline;
+    margin-bottom: 18px;
+}
+
+footer {
+    text-align: center;
+    background: #181818;
+    padding: 24px 10px;
+    color: #aaaaaa;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+footer span {
+    color: #ff3155;
+}
+
+@media (max-width: 380px) {
+    .song {
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .cover {
+        width: 42px;
+        height: 42px;
+        font-size: 22px;
+    }
+
+    .details h3 {
+        font-size: 13px;
+    }
+
+    .play {
+        padding: 10px;
+        font-size: 11px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎧 My Favourite Music</h1>
+    <p>Your Music • Your Mood • Your World</p>
+</header>
+
+<main class="container">
+
+    <section class="banner">
+        <div class="music-icon">🎵</div>
+        <h2>Welcome to My Music World</h2>
+        <p>
+            मेरे पसंदीदा गानों की दुनिया में आपका स्वागत है।
+            अपना गाना चुनें और म्यूजिक का आनंद लें!
+        </p>
+    </section>
+
+    <h2 class="title">❤️ My Favourite Songs</h2>
+
+    <!-- SONG 1 -->
+    <div class="song">
+        <div class="cover">🎶</div>
+        <div class="details">
+            <h3>My Favourite Song 1</h3>
+            <p>YouTube Music</p>
+        </div>
+        <a class="play"
+           href="https://music.youtube.com/watch?v=08frIHeh06I&amp;si=HG6xFIlv_1Yeubpu"
+           target="_blank"
+           rel="noopener noreferrer">
+           ▶ PLAY SONG
+        </a>
+    </div>
+
+    <!-- SONG 2 -->
+    <div class="song">
+        <div class="cover">🎧</div>
+        <div class="details">
+            <h3>My Favourite Song 2</h3>
+            <p>YouTube Music</p>
+        </div>
+        <a class="play"
+           href="https://music.youtube.com/watch?v=9cbPM9MYJgI&amp;si=dsEZ9NlGRN6vg4m-"
+           target="_blank"
+           rel="noopener noreferrer">
+           ▶ PLAY SONG
+        </a>
+    </div>
+
+    <!-- SONG 3 -->
+    <div class="song">
+        <div class="cover">🎼</div>
+        <div class="details">
+            <h3>My Favourite Song 3</h3>
+            <p>YouTube Music</p>
+        </div>
+        <a class="play"
+           href="https://music.youtube.com/watch?v=lGO21pNVLK8&amp;si=884tewZflCQC0OgV"
+           target="_blank"
+           rel="noopener noreferrer">
+           ▶ PLAY SONG
+        </a>
+    </div>
+
+    <!-- SONG 4 -->
+    <div class="song">
+        <div class="cover">🎹</div>
+        <div class="details">
+            <h3>My Favourite Song 4</h3>
+            <p>YouTube Music</p>
+        </div>
+        <a class="play"
+           href="https://music.youtube.com/watch?v=7h7mHFVgY6w&amp;si=1HYxmrMe0SmQzZts"
+           target="_blank"
+           rel="noopener noreferrer">
+           ▶ PLAY SONG
+        </a>
+    </div>
+
+    <!-- SONG 5 -->
+    <div class="song">
+        <div class="cover">💖</div>
+        <div class="details">
+            <h3>My Favourite Song 5</h3>
+            <p>YouTube Music</p>
+        </div>
+        <a class="play"
+           href="https://music.youtube.com/watch?v=7h7mHFVgY6w&amp;si=1HYxmrMe0SmQzZts"
+           target="_blank"
+           rel="noopener noreferrer">
+           ▶ PLAY SONG
+        </a>
+    </div>
+
+    <!-- ALL FULL LINKS -->
+    <section class="link-box">
+        <h3>🔗 All Music Links</h3>
+
+        <a class="full-link"
+           href="https://music.youtube.com/watch?v=08frIHeh06I&amp;si=HG6xFIlv_1Yeubpu"
+           target="_blank" rel="noopener noreferrer">
+           Song 1 — Open Full Link ↗
+        </a>
+
+        <a class="full-link"
+           href="https://music.youtube.com/watch?v=9cbPM9MYJgI&amp;si=dsEZ9NlGRN6vg4m-"
+           target="_blank" rel="noopener noreferrer">
+           Song 2 — Open Full Link ↗
+        </a>
+
+        <a class="full-link"
+           href="https://music.youtube.com/watch?v=lGO21pNVLK8&amp;si=884tewZflCQC0OgV"
+           target="_blank" rel="noopener noreferrer">
+           Song 3 — Open Full Link ↗
+        </a>
+
+        <a class="full-link"
+           href="https://music.youtube.com/watch?v=7h7mHFVgY6w&amp;si=1HYxmrMe0SmQzZts"
+           target="_blank" rel="noopener noreferrer">
+           Song 4 — Open Full Link ↗
+        </a>
+
+        <a class="full-link"
+           href="https://music.youtube.com/watch?v=7h7mHFVgY6w&amp;si=1HYxmrMe0SmQzZts"
+           target="_blank" rel="noopener noreferrer">
+           Song 5 — Open Full Link ↗
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    Made with <span>♥</span> by Music Lovers
+    <br><br>
+    © 2026 My Favourite Music
+</footer>
+
+</body>
+          </html>
